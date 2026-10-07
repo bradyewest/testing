@@ -49,3 +49,17 @@ Everything is plain JavaScript and WebGL inside `index.html`:
 - **Rendering**: each chunk is turned into one triangle mesh. Hidden faces are skipped and ambient occlusion is worked out per vertex. Water is drawn in a separate see-through pass.
 - **Physics**: the player is a 0.6 × 1.8 block box with gravity. Collisions are checked against the block grid one axis at a time.
 - **Saving**: only the blocks you change are stored in `localStorage`, together with the world seed and your position.
+
+# Lantern Duel
+
+A 2D fighting game on a rooftop at night, also in one file: `lantern-duel.html`. Double-click it to play. You can fight the CPU (Easy, Normal or Hard) or play two players on one keyboard. Matches are best of three, with 60-second rounds.
+
+| Player 1 | Player 2 | Action |
+| --- | --- | --- |
+| `A` `D` | `←` `→` | Walk. Hold back to block |
+| `W` / `S` | `↑` / `↓` | Jump / crouch |
+| `F` | `,` | Punch |
+| `G` | `.` | Kick. Down + kick sweeps, kick in the air hits high |
+| `H` | `/` | Lantern bolt (costs half the meter) |
+
+There are three fighters. Kestrel is fast, Basalt is heavy and Wren is balanced and builds meter quickly. `Esc` pauses and `M` mutes. On a phone, touch buttons appear under the stage.
